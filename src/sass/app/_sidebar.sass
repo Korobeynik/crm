@@ -1,0 +1,110 @@
+.logo
+  display: inline-block
+
+.drawer-top
+  padding-left: 30px
+  .organization
+    text-align: right
+    padding-right: 21px
+    text-transform: uppercase
+    color: #fff
+    font-weight: 900
+    font-size: 18px
+    position: relative
+    top: -3px
+
+.v-navigation-drawer__content
+  padding-top: 15px
+
+.theme--light.v-navigation-drawer
+  background-color: $main
+
+.v-navigation-drawer__border
+  display: none
+
+#app
+  .main-nav > .nav-item.active
+    > a
+      background-color: $orange
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 14px
+      position: relative
+      &:before
+        content: ''
+        display: block
+        width: 20px
+        height: 100%
+        background-color: $orange
+        position: absolute
+        right: -20px
+        z-index: 11111
+
+      .nav-icon
+        margin-right: 15px
+        opacity: 1
+
+#app
+  .main-nav
+    padding: 0
+    margin: 0
+    list-style: none
+    padding-top: 30px
+    .nav-icon
+      display: inline-block
+      margin-right: 10px
+      opacity: 0.5
+    a
+      display: flex
+      width: 100%
+      align-items: center
+      min-height: 46px
+      padding-left: 30px
+      color: #ffffff
+      text-decoration: none
+      padding-right: 15px
+      &:hover
+        background-color: $main
+        .nav-icon
+          opacity: 1
+      svg
+        margin-left: auto
+    li
+      width: 100%
+      margin: 0
+      padding: 0
+  .sub-nav
+    margin: 0
+    padding: 0
+    list-style: none
+    background-color: lighten($main, 10%)
+    padding: 5px 0 5px 0
+    li
+      width: 100%
+      margin: 0
+      padding: 0
+      &.active
+        a
+          font-weight: 500
+          &:before
+            content: ''
+            display: block
+            height: 2px
+            width: 100%
+            position: absolute
+            bottom: 5px
+            left: 55px
+            background-color: #fff
+          .nav-icon
+            opacity: 1
+      a
+        position: relative
+        font-size: 15px
+        font-weight: normal
+        min-height: 40px
+        .nav-icon
+          position: relative
+          display: inline-block
+          top: 1px
+          svg
+            width: 15px

@@ -1,0 +1,306 @@
+
+.card-grid
+  .card.list-items
+    width: 45%
+    z-index: 1
+  .card.detail-item
+    width: 55%
+    padding: 35px 40px 40px 40px
+    display: flex
+
+.page-header
+  .actions-section
+    width: 45%
+    display: flex
+    padding-right: 10px
+  .actions-buttons
+    margin-left: auto
+    display: flex
+    align-items: center
+    .sortable-btn
+      margin-left: auto
+    .circle-btn
+      margin-left: 15px
+  button.orange-btn
+    margin: 0px
+    margin-left: auto
+
+
+.sort-buttons
+  margin-left: auto
+  width: 55px !important
+  position: absolute
+  right: 10px
+  opacity: 0
+.action-btn.circle-btn.swap-btn
+  box-shadow: none
+  width: 18px
+  height: 18px
+  margin: 0 5px
+  //opacity: 0
+
+.select-item
+  margin: auto
+  font-size: 20px
+  font-weight: normal
+  color: #BBDBFE
+  text-align: center
+  span
+    display: inline-block
+    max-width: 310px
+    line-height: 25px
+    position: relative
+  img
+    max-width: 100%
+    display: inline-block
+    margin-bottom: 10px
+
+.search-block
+  width: 100%
+  max-width: 547px
+  background-color: #ffffff
+  display: flex
+  align-items: center
+  height: 35px
+  position: relative
+  border-radius: 50px
+  input
+    width: 100%
+    height: 100%
+    font-weight: normal
+    padding-left: 15px
+    color: $main
+    font-size: 15px
+    &:focus
+      outline: none !important
+  .search-icon
+    width: 15px
+    height: 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    background-color: #ffffff
+    right: 12px
+
+
+.detail-close
+  display: flex
+  align-items: center
+  font-size: 15px
+  color: $main
+  width: 85px
+  margin-bottom: 30px
+  &:hover
+    cursor: pointer
+  svg
+    margin-right: 10px
+
+
+.item-area
+  display: flex
+  flex-direction: column
+  height: 100%
+
+
+.item-form
+  .item-name
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 30px
+    position: relative
+    .warn
+      position: absolute
+      right: 0
+      top: 0
+      color: $orange
+  .item-values
+    background-color: #F4F9FF
+    border-radius: 10px
+    padding: 20px
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 20px
+    position: relative
+    .warn
+      position: absolute
+      right: 20px
+      top: 20px
+      color: $main
+    input
+      margin-bottom: 20px
+    .base-btn
+      margin: 0 0 0 auto
+  label
+    width: 100%
+    color: $title
+    text-transform: uppercase
+    font-size: 13px
+    font-weight: bold
+  input
+    width: 100%
+    padding: 5px 0
+    border-bottom: 1px solid #9DCCFF
+    font-size: 14px
+    &:first-letter
+      text-transform: uppercase !important
+    &:focus
+      outline: none
+  input::-webkit-input-placeholder
+    color: #B9BCBF
+    font-size: 13px
+
+.values-list > span
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+.values-list
+  margin-bottom: 15px
+  display: flex
+  flex-wrap: wrap
+  .value-item
+    padding: 5px 15px
+    max-width: 200px
+    background: #E3F0FF
+    min-height: 29px
+    align-items: center
+    justify-content: center
+    color: $main
+    border-radius: 10px
+    display: flex
+    align-items: center
+    text-align: center
+    font-size: 13px
+    font-weight: normal
+    margin: 0 10px 10px 0
+    &.active
+      background-color: $main
+      color: #fff
+    span
+      display: inline-block
+      max-width: 180px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      margin-right: 10px
+    .close
+      min-width: 12px
+      margin-right: -5px
+      position: relative
+      right: 0px
+      &:hover
+        cursor: pointer
+
+
+.used
+  .title
+    margin-bottom: 15px
+    font-size: 13px !important
+    text-transform: uppercase
+    font-weight: bold
+    color: #3282B8
+    font-family: 'HelveticaNeueCyr' !important
+.used-list
+  a
+    margin-right: 10px
+    padding-right: 5px
+    min-width: 110px
+    background: #E3F0FF
+    min-height: 29px
+    align-items: center
+    justify-content: center
+    color: $main !important
+    border-radius: 10px
+    display: inline-flex
+    text-align: center
+    font-size: 13px
+    font-weight: normal
+    text-decoration: none
+    padding: 0 20px
+    margin-bottom: 10px
+    svg
+      position: relative
+      right: -10px
+
+
+.flip-list-move
+  transition: transform 0.5s
+
+.no-move
+  transition: transform 0s
+
+.ghost
+  opacity: 0.5
+  background: #c8ebfb
+
+.page
+  .list-group
+    min-height: 20px
+    list-style: none
+    padding: 0
+    margin: 0
+    > span
+      display: flex
+      flex-direction: column
+    li
+      height: 48px
+      display: flex
+      align-items: center
+      width: 100%
+      padding-left: 20px
+      padding-right: 20px
+      position: relative
+      span:first-letter
+        text-transform: uppercase
+      &:hover
+        cursor: pointer
+      input
+        margin-right: 15px
+        &:focus
+          outline: none !important
+        &:before
+          border-color: #7CE1A4
+        &:after
+          background-color: #7CE1A4
+      div
+        color: #7E7E7E
+        background-color: transparent
+        font-size: 15px
+        border-bottom: 1px solid #E3F0FF
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+
+li.list-group-item:hover >  .sort-buttons
+  opacity: 1
+
+.check-all
+  input
+    &:before
+      border-color: #7CE1A4
+    &:after
+      background-color: #7CE1A4
+  &:hover
+    label
+      cursor: pointer
+
+input[type="checkbox"]
+  margin-right: 10px
+  width: 16px
+  height: 16px
+  min-width: 16px
+
+.check-all
+  min-height: 48px
+  display: flex
+  align-items: center
+  width: 100%
+  padding-left: 20px
+  color: #5893D4
+  font-size: 13px
+  border-bottom: 1px solid #E3F0FF
+
+//.list-group-item
+//  cursor: move

@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Процессор",
+      "check": false,
+      "values": ["Intel","AMD"],
+      "order": 1
+    },
+    {
+      "id": 2,
+      "name": "Производитель",
+      "check": false,
+      "values": [],
+      "order": 2
+    },
+    {
+      "id": 3,
+      "name": "Объем оперативной памяти",
+      "check": false,
+      "values": [],
+      "order": 3
+    },
+    {
+      "id": 4,
+      "name": "Диагональ экрана",
+      "check": false,
+      "values": [],
+      "order": 4
+    },
+    {
+      "id": 5,
+      "name": "Операционная система",
+      "check": false,
+      "values": [],
+      "order": 5
+    }
+  ]
+}
